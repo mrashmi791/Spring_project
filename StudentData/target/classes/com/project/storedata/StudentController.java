@@ -20,4 +20,11 @@ public class StudentController {
 		
 	}
 	
+	@RequestMapping("/new")
+	public String newStudentForm(Map<String , object> model) {
+		model.put("student", new Student);
+		return new_student;
+	}
+	
+	
 }
